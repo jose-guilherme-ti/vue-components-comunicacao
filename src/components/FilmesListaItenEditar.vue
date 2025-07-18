@@ -53,12 +53,13 @@ export default {
                 )
             },
             get() {
+                // eslint-disable-next-line vue/no-side-effects-in-computed-properties
                 return this.filmeLocal = this.filme
             }
         }
     },
     methods: {
-        salvarFilme(event) {
+        salvarFilme() {
             // this.$emit('atualizarFilme', this.filmeLocal)
             eventBus.atualizarFilme(this.filmeLocal)
         }

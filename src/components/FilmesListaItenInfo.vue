@@ -30,7 +30,7 @@ export default {
         })
     },
     methods: {
-        editar(event) {
+        editar() {
             this.$emit('editarFilme', this.filme)
         }
     }
